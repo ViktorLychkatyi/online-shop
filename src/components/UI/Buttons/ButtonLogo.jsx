@@ -1,5 +1,5 @@
 export function ButtonLogo() {
     return (
-        <img src="svg/logo.svg" alt=""/>
+        <div className="cursor-pointer"><img src="svg/logo.svg" alt=""/></div>
     )
 }

@@ -8,8 +8,7 @@ import {ButtonCart} from "../Buttons/ButtonCart.jsx";
 export function Navigation() {
     return (
         <>
-            <div className={"flex m-auto bg-color-bg text-white justify-center items-center" +
-                " gap-5 p-5 z-10"}>
+            <div className="flex m-auto bg-color-bg text-white justify-center items-center gap-5 p-5">
                 <ButtonLogo/>
                 <ButtonCatalog/>
                 <ButtonSearch/>
