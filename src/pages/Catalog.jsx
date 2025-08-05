@@ -3,7 +3,7 @@ import {Footer} from "../components/UI/Layouts/Footer.jsx";
 import {MenuCatalog} from "../components/UI/Layouts/MenuCatalog.jsx";
 import {Navigation} from "../components/UI/Layouts/Navigation.jsx";
 
-export function CatalogPage() {
+export function Catalog() {
     return (
         <>
             <Navigation/>

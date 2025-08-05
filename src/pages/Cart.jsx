@@ -2,7 +2,7 @@ import {Navigation} from "../components/UI/Layouts/Navigation.jsx";
 import {CardProductCart} from "../components/UI/Cards/CardProductCart.jsx";
 import {CartOrder} from "../components/UI/Layouts/CartOrder.jsx";
 
-export function CartPage() {
+export function Cart() {
     return (
         <>
             <Navigation/>

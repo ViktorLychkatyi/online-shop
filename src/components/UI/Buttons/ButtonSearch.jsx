@@ -1,3 +1,5 @@
+import {BrowserRouter as Router, Routes, Route, NavLink, Link} from 'react-router';
+
 export function ButtonSearch(){
     return (
         <form className="w-full max-w-3xl flex justify-end items-center gap-2">
@@ -8,12 +10,12 @@ export function ButtonSearch(){
              focus:outline-none focus:border-tiny focus:ring-1 focus:ring-tiny"
             />
 
-            <button
-                type="submit"
-                className="bg-tiny hover:bg-hover-tiny cursor-pointer text-white flex items-center justify-center p-4 w-20 absolute rounded-4xl "
+            <Link
+                to="/search"
+                className="bg-tiny hover:bg-hover-tiny cursor-pointer text-white flex items-center justify-center p-4 w-20 rounded-4xl absolute"
             >
                 <img src="svg/search.svg" alt=""/>
-            </button>
+            </Link>
         </form>
 
     )

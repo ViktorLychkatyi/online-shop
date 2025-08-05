@@ -10,6 +10,7 @@
     /*colors*/
     --color-*: initial;
     --color-bg: #F8F8F8;
+    --colog-dark-opacity: #1212124D;
     --color-black: #121212;
     --color-dark-gray: #8F8F8F;
     --color-mid-gray: #AEAEAE;
@@ -31,3 +32,4 @@ body {
     font-family: 'Geist', sans-serif;
     background-color: var(--color-bg);
 }
+

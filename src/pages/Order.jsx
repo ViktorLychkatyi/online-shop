@@ -1,8 +1,8 @@
 import {MinNavigation} from "../components/UI/Layouts/MinNavigation.jsx";
-import {CartOrder} from "../components/UI/Layouts/CartOrder.jsx";
+import {PayOrder} from "../components/UI/Layouts/PayOrder.jsx";
 import {FormOrder} from "../components/UI/Forms/FormOrder.jsx";
 
-export function OrderPage() {
+export function Order() {
     return (
         <>
             <MinNavigation/>
@@ -12,7 +12,7 @@ export function OrderPage() {
                     <FormOrder/>
                 </div>
                 <div>
-                    <CartOrder/>
+                    <PayOrder/>
                 </div>
             </div>
         </>

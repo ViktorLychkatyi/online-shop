@@ -3,7 +3,7 @@ import {ImageProduct} from "../components/UI/Layouts/ImageProduct.jsx";
 import {InfoProduct} from "../components/UI/Layouts/InfoProduct.jsx";
 import {InfoPrice} from "../components/UI/Layouts/InfoPrice.jsx";
 
-export function ProductPage() {
+export function Product() {
     return (
         <>
             <Navigation/>

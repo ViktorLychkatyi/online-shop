@@ -4,7 +4,7 @@ import {SlidesMain} from "../components/UI/Layouts/SlidesMain.jsx";
 import {TotalProducts} from "../components/UI/Layouts/TotalProducts.jsx";
 import {Footer} from "../components/UI/Layouts/Footer.jsx";
 
-export function HomePage() {
+export function Home() {
     return (
         <>
             <Navigation/>
