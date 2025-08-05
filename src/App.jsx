@@ -8,7 +8,7 @@ import {Product} from "./pages/Product.jsx";
 import {Cart} from "./pages/Cart.jsx";
 import {Order} from "./pages/Order.jsx";
 import {Successfully} from "./pages/Successfully.jsx";
-import {AdminLogin} from "./pages/AdminLogin.jsx";
+import {Admin} from "./pages/Admin.jsx";
 import {Dashboard} from "./pages/Dashboard.jsx";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
             <Route path="/Cart" element={<Cart />} />
             <Route path="/Order" element={<Order />} />
             <Route path="/Successfully" element={<Successfully />} />
-            <Route path="/AdminLogin" element={<AdminLogin />} />
+            <Route path="/Admin" element={<Admin />} />
             <Route path="/Dashboard" element={<Dashboard />} />
         </Routes>
     </Router>
