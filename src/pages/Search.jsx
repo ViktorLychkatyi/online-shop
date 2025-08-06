@@ -4,7 +4,6 @@ import {TotalProducts} from "../components/UI/Layouts/TotalProducts.jsx";
 export function Search() {
     return (
         <>
-            <Navigation/>
             <TotalProducts/>
         </>
     )

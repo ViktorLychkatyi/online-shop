@@ -7,7 +7,6 @@ import {Footer} from "../components/UI/Layouts/Footer.jsx";
 export function Home() {
     return (
         <>
-            <Navigation/>
             <SlidesMain/>
             <TotalProducts/>
             <Footer/>

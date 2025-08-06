@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Toast } from "radix-ui";
 
-export const AddToCart = () => {
+export const AddToCart = ({buttonText}) => {
     const [open, setOpen] = React.useState(false);
     const eventDateRef = React.useRef(new Date());
     const timerRef = React.useRef(0);
@@ -23,7 +23,7 @@ export const AddToCart = () => {
                     }, 100);
                 }}
             >
-                В корзину
+                {buttonText}
             </button>
 
             <Toast.Root

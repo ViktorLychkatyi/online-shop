@@ -6,7 +6,6 @@ import {Navigation} from "../components/UI/Layouts/Navigation.jsx";
 export function Catalog() {
     return (
         <>
-            <Navigation/>
             <div className="container m-auto w-full flex flex-row justify-center gap-5">
                 <ListCatalog/>
                 <MenuCatalog/>
