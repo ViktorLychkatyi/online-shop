@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Toast } from "radix-ui";
 
-export const AddToCart = ({buttonText}) => {
+export const AddToCart = ({ buttonText, product }) => {
     const [open, setOpen] = React.useState(false);
     const eventDateRef = React.useRef(new Date());
     const timerRef = React.useRef(0);
@@ -10,18 +10,39 @@ export const AddToCart = ({buttonText}) => {
         return () => clearTimeout(timerRef.current);
     }, []);
 
+    const handleAddToCart = () => {
+        // Получаем корзину
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Проверяем, есть ли товар
+        const exist = cart.find(item => item.id === product.id);
+
+        if (exist) {
+            // Увеличиваем количество
+            const updatedCart = cart.map(item =>
+                item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+            );
+            localStorage.setItem("cart", JSON.stringify(updatedCart));
+        } else {
+            // Добавляем новый товар
+            cart.push({ ...product, quantity: 1 });
+            localStorage.setItem("cart", JSON.stringify(cart));
+        }
+
+        // Показываем тост
+        setOpen(false);
+        window.clearTimeout(timerRef.current);
+        timerRef.current = window.setTimeout(() => {
+            eventDateRef.current = oneWeekAway();
+            setOpen(true);
+        }, 100);
+    };
+
     return (
         <Toast.Provider swipeDirection="right">
             <button
-                className="w-full bg-tiny hover:bg-hover-tiny cursor-pointer text-white text-xl font-semibold p-3 rounded-4xl "
-                onClick={() => {
-                    setOpen(false);
-                    window.clearTimeout(timerRef.current);
-                    timerRef.current = window.setTimeout(() => {
-                        eventDateRef.current = oneWeekAway();
-                        setOpen(true);
-                    }, 100);
-                }}
+                className="w-full bg-tiny hover:bg-hover-tiny cursor-pointer text-white text-xl font-semibold p-3 rounded-4xl"
+                onClick={handleAddToCart}
             >
                 {buttonText}
             </button>
@@ -34,18 +55,8 @@ export const AddToCart = ({buttonText}) => {
                 <Toast.Title className="text-[15px] font-medium text-slate12 [grid-area:_title]">
                     Добавлено в корзину
                 </Toast.Title>
-
-                {/*<Toast.Action*/}
-                {/*    className="[grid-area:_action]"*/}
-                {/*    asChild*/}
-                {/*    altText="Goto schedule to undo"*/}
-                {/*>*/}
-                {/*    <button className="inline-flex h-[25px] items-center justify-center rounded bg-green2 px-2.5 text-xs font-medium leading-[25px] text-green11 shadow-[inset_0_0_0_1px] shadow-green7 hover:shadow-[inset_0_0_0_1px] hover:shadow-green8 focus:shadow-[0_0_0_2px] focus:shadow-green8">*/}
-                {/*        Undo*/}
-                {/*    </button>*/}
-                {/*</Toast.Action>*/}
-
             </Toast.Root>
+
             <Toast.Viewport className="fixed bottom-0 right-0 z-[2147483647] m-0 flex w-[390px] max-w-[100vw] list-none flex-col gap-2.5 p-[var(--viewport-padding)] outline-none [--viewport-padding:_25px]" />
         </Toast.Provider>
     );
@@ -55,11 +66,4 @@ function oneWeekAway(date) {
     const now = new Date();
     const inOneWeek = now.setDate(now.getDate() + 7);
     return new Date(inOneWeek);
-}
-
-function prettyDate(date) {
-    return new Intl.DateTimeFormat("en-US", {
-        dateStyle: "full",
-        timeStyle: "short",
-    }).format(date);
 }

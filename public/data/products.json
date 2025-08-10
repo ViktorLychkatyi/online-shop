@@ -4,7 +4,7 @@
     "title": "Монитор игровой Lenovo Legion R25i-30 (67B7GACBUA)",
     "description": "Диагональ экрана: 24,5''\nРазрешение экрана:\nFull HD (1920x1080)\nТип матрицы:\nIPS\nМаксимальная частота развертки экрана:\n180 Гц\nОсобенности:\nРегулировка по высоте, Поворот экрана, Возможность настенного крепления, Встроенные динамики",
     "price": 6599,
-    "oldPrice": 6999,
+    "discount": 6999,
     "countReview": 1,
     "starsReview": 5,
     "image": "/img/f_auto.avif"
@@ -14,7 +14,7 @@
     "title": "Ноутбук игровой Lenovo Legion Pro 7 16IAX10H (83F5009PRA) Eclipse Black",
     "description": "Диагональ экрана:\n16\"\nМодель центрального процессора:\nCore Ultra 9 275HX\nОбъем ОЗУ:\n32 ГБ\nОбъем накопителя:\n1 ТБ\nМодель графического процессора:\nGeForce RTX 5070 Ti",
     "price": 127999,
-    "oldPrice": 149999,
+    "discount": 149999,
     "countReview": 10,
     "starsReview": 4.5,
     "image": "/img/f_auto (1).avif"
@@ -24,7 +24,7 @@
     "title": "Смартфон Apple iPhone 16 Pro Max 256Gb Desert Titanium",
     "description": "Диагональ дисплея:\n6,9\"\nТип экрана:\nOLED\nМодель процессора:\nApple A18 Pro Bionic\nОсновная камера:\n48+48+12 Мп",
     "price": 62799,
-    "oldPrice": 67499,
+    "discount": 67499,
     "countReview": 5,
     "starsReview": 4,
     "image": "/img/f_auto (2).avif"
@@ -34,7 +34,7 @@
     "title": "Геймпад PlayStation DualSense Midnight Black",
     "description": "Тип игрового контроллера\nГеймпад\nТип подключения\nБеспроводное\nИнтерфейсы\nBluetooth\nUSB Type-C\nРазъем 3,5 мм\nКоличество кнопок\n18\nВибрация\nДа",
     "price": 3399,
-    "oldPrice": 3699,
+    "discount": 3699,
     "countReview": 15,
     "starsReview": 4,
     "image": "/img/f_auto (3).avif"
@@ -44,7 +44,7 @@
     "title": "Телевизор JVC LT-32MU238",
     "description": "Диагональ экрана:\n32''\nРазрешение экрана:\nHD (1366x768)\nТип телевизора:\nLED\nТип подсветки:\nDirect LED",
     "price": 8499,
-    "oldPrice": 6899,
+    "discount": 6899,
     "countReview": 6,
     "starsReview": 3.5,
     "image": "/img/f_auto (4).avif"
@@ -54,7 +54,7 @@
     "title": "Смартфон Samsung Galaxy A56 5G 8/256Gb Awesome Graphite (SM-A566BZKCEUC)",
     "description": "Диагональ дисплея:\n6,7\"\nТип экрана:\nSuper Amoled\nМодель процессора:\nExynos 1580\nОсновная камера:\n50+12+5 Мп\nЁмкость аккумулятора:\n5000 мАч",
     "price": 20999,
-    "oldPrice": 19999,
+    "discount": 19999,
     "countReview": 8,
     "starsReview": 4,
     "image": "/img/f_auto (5).avif"
@@ -64,7 +64,7 @@
     "title": "Смарт-часы Huawei Watch Fit 3 Star White",
     "description": "Совместимость с ОС:\nAndroid OS, iOS (Apple)\nОповещения:\nSMS, Вызовы, Поддержка мессенджеров, События календаря, Социальные сети, Электронная почта\nПоддержка бесконтактных платежей:\nНет\nЗащита от влаги:\nWR50М (дождь, мытье рук, плавание в басейне)\nВремя работы:\nДо 10 дней",
     "price": 5499,
-    "oldPrice": 3999,
+    "discount": 3999,
     "countReview": 1,
     "starsReview": 4,
     "image": "/img/f_auto (6).avif"
@@ -74,7 +74,7 @@
     "title": "Планшет Xiaomi Redmi Pad Pro 8/256GB Graphite Gray (VHU4750EU)",
     "description": "Диагональ:\n12,1''\nСвязь:\nBluetooth, Wi-Fi\nОбъем ОЗУ:\n8 ГБ\nОбъем встроенной памяти:\n256 ГБ\nЕмкость аккумулятора:\n10000 мАч",
     "price": 13799,
-    "oldPrice": 12999,
+    "discount": 12999,
     "countReview": 2,
     "starsReview": 5,
     "image": "/img/f_auto (7).avif"
@@ -84,7 +84,7 @@
     "title": "Мышь беспроводная игровая Logitech G Pro X Superlight 2 LightSpeed Black (910-006630)",
     "description": "Тип сенсора мыши: Оптический\nТип подключения:\nБеспроводное\nОсобенности:\nОптические переключатели\nКоличество клавиш:\n5\nРазрешение оптического сенсора мыши (dpi):\n32000 dpi",
     "price": 6699,
-    "oldPrice": 6999,
+    "discount": 6999,
     "countReview": 5,
     "starsReview": 4,
     "image": "/img/f_auto (8).avif"
@@ -94,7 +94,7 @@
     "title": "Клавиатура беспроводная игровая Logitech G Pro X TKL LightSpeed Black (920-012136)",
     "description": "Тип клавиатуры:\nКлавиатура игровая\nТип подключения:\nКомбинированное\nФормат:\nКомпактная\nПодсветка:\nЕсть",
     "price": 8999,
-    "oldPrice": 9299,
+    "discount": 9299,
     "countReview": 10,
     "starsReview": 5,
     "image": "/img/f_auto (9).avif"

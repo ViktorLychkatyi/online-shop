@@ -10,12 +10,12 @@ export function ButtonSearch(){
              focus:outline-none focus:border-tiny focus:ring-1 focus:ring-tiny"
             />
 
-            <Link
+            <NavLink
                 to="/search"
                 className="bg-tiny hover:bg-hover-tiny cursor-pointer text-white flex items-center justify-center p-4 w-20 rounded-4xl absolute"
             >
                 <img src="svg/search.svg" alt=""/>
-            </Link>
+            </NavLink>
         </form>
 
     )

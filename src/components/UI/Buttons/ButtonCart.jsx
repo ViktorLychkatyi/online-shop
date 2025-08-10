@@ -2,10 +2,10 @@ import {BrowserRouter as Router, Routes, Route, NavLink, Link} from 'react-route
 
 export function ButtonCart(){
     return (
-        <Link
+        <NavLink
             to="/cart"
             className="w-15 h-15 bg-light-gray hover:bg-hover-light-gray cursor-pointer flex items-center justify-center rounded-4xl shrink-0">
             <img src="svg/fluent_cart-16-regular.svg" alt="Корзина" className="w9 h-9"/>
-        </Link>
+        </NavLink>
     )
 }

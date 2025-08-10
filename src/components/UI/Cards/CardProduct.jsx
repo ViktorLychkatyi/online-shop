@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Routes, Route, NavLink, Link} from 'react-router';
 import {AddToCart} from "../Buttons/AddToCart.jsx";
+// import React, { useRef } from 'react';
 
 export function CardProduct({product}) {
     return (
@@ -15,12 +16,12 @@ export function CardProduct({product}) {
                     <div className="flex"></div>
                     <div className="flex flex-row items-center gap-2">
                         <p className="text-2xl font-semibold">{product.price} грн</p>
-                        <p className="text-sm font-medium relative top-0.5 line-through text-dark-gray">{product.oldPrice} грн</p>
+                        <p className="text-sm font-medium relative top-0.5 line-through text-dark-gray">{product.discount} грн</p>
                     </div>
                 </div>
             </Link>
 
-            <AddToCart buttonText="В корзину"/>
+            <AddToCart buttonText="В корзину" product={product}/>
         </div>
     );
 }

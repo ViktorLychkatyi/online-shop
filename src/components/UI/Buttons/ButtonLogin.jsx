@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Toast } from "radix-ui";
 
-export const AddToCart2 = ({buttonText}) => {
+export const ButtonLogin = () => {
     const [open, setOpen] = React.useState(false);
     const eventDateRef = React.useRef(new Date());
     const timerRef = React.useRef(0);
@@ -13,7 +13,7 @@ export const AddToCart2 = ({buttonText}) => {
     return (
         <Toast.Provider swipeDirection="right">
             <button
-                className="w-2xs bg-tiny hover:bg-hover-tiny cursor-pointer text-white text-xl font-semibold p-3 rounded-4xl "
+                className="w-full bg-tiny hover:bg-hover-tiny cursor-pointer text-white text-xl font-semibold p-3 rounded-4xl "
                 onClick={() => {
                     setOpen(false);
                     window.clearTimeout(timerRef.current);
@@ -23,7 +23,7 @@ export const AddToCart2 = ({buttonText}) => {
                     }, 100);
                 }}
             >
-                {buttonText}
+                Войти
             </button>
 
             <Toast.Root
@@ -32,7 +32,7 @@ export const AddToCart2 = ({buttonText}) => {
                 onOpenChange={setOpen}
             >
                 <Toast.Title className="text-[15px] font-medium text-slate12 [grid-area:_title]">
-                    Добавлено в корзину
+                    Успешная регистрация!
                 </Toast.Title>
 
                 <Toast.Action

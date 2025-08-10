@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Routes, Route, NavLink, Link} from 'react-router';
 import { useParams } from 'react-router';
-import products from '../../../data/products.json';
+import products from '../../../../public/data/products.json';
 
 export function InfoProduct() {
     const { id } = useParams();

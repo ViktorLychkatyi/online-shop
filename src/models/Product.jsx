@@ -1,11 +1,12 @@
 export class Product {
-    constructor(id, title, subtitle, price, oldPrice, image, discount) {
+    constructor(id, title, subtitle, price, discount, starsReview, countReview, image) {
         this.id = id;
         this.title = title;
-        this.subtitle = subtitle;
+        this.description = subtitle;
         this.price = price;
-        this.oldPrice = oldPrice;
-        this.image = image;
         this.discount = discount;
+        this.starsReview = starsReview;
+        this.countReview = countReview;
+        this.image = image;
     }
 }

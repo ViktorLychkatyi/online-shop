@@ -17,7 +17,6 @@ import {Admin} from "./pages/Admin.jsx";
 import {Dashboard} from "./pages/Dashboard.jsx";
 
 function App() {
-
     return (
         <Router>
             <Routes>

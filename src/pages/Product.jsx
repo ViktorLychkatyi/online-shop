@@ -4,12 +4,16 @@ import {ImageProduct} from "../components/UI/Layouts/ImageProduct.jsx";
 import {InfoProduct} from "../components/UI/Layouts/InfoProduct.jsx";
 import {InfoPrice} from "../components/UI/Layouts/InfoPrice.jsx";
 import {ProductPath} from "../components/UI/Layouts/ProductPath.jsx";
-import products from '../data/products.json';
+import products from '../../public/data/products.json';
 
 export function Product() {
     const { id } = useParams();
     const productId = parseInt(id, 10);
     const product = products.find(p => p.id === productId);
+
+    if (!product) {
+        return <h2>Вы не добавили товары в корзину</h2>;
+    }
 
     return (
         <>
